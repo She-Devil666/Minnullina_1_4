@@ -23,5 +23,16 @@ namespace Sytylaya
         {
             InitializeComponent();
         }
+
+        private void send_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Молодец! Ты помнишь свое имя!");
+        }
+
+        private void name_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+                MessageBox.Show("Имя введено неверно! Попробуйте еще раз!");
+        }
     }
 }
